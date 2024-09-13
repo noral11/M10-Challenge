@@ -1,0 +1,370 @@
+/* General body styles */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+  
+}
+
+/* Headings */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59; /* Bright blue */
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #d98555; 
+  line-height: 2;
+  margin-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+p{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+a {
+  color: #59331d; /* Coffee color */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #d98555; /* Peach color on hover */
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  border-bottom: 10px solid #d98555; /* Peach color */
+  padding: 20px;
+  text-align: center;
+  background-color: #082B59; /* White background for the header */
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navbar styles */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+nav .logo img {
+  max-width: 150px;
+}
+
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: #d98555; /* Peach hover color */
+}
+
+
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+
+article {
+  flex-basis: 73%;
+}
+
+figure {
+  margin: 3rem 0 0 0;
+  flex-basis: 25%;
+  background-color: #59331d;
+  border-radius: 10px;
+}
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+
+
+/* Main container styles */
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url(../images/gulp-menu.jpg) no-repeat center center;
+  background-size: cover; /* Cover the entire container */
+}
+
+.home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.522); /* White tint with 50% opacity */
+  pointer-events: none; /* Allows interactions with elements underneath */
+}
+
+article {
+  position: relative;
+  z-index: 1; /* Ensures the content is above the overlay */
+  color: #333; /* Text color for contrast */
+  padding: 20px;
+  text-align: center; /* Center align text */
+  background: rgba(255, 255, 255, 0.8); /* Optional: white background for article to enhance readability */
+  border-radius: 8px; /* Optional: rounded corners for the article */
+  margin: 40px;
+}
+
+figure{
+  position: relative;
+}
+
+
+/* Product card container */
+.product-container {
+  display: flex;
+  justify-content: space-between; /* Space between the boxes */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Add space between product boxes */
+  margin: 20px;
+}
+
+/* Product box styles */
+.product-box {
+  flex: 1 1 calc(33% - 20px); /* Makes each box take up one-third of the width */
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  background-color: #f2f2f2; /* Background color */
+  text-align: center; /* Center text and images */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add hover effect to slightly lift the product box */
+.product-box:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+
+/* Product box images */
+.product-box img {
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.cta {
+  display: inline-block;
+  background-color: #082B59;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #082B59;
+  
+}
+
+.cta:hover {
+  background-color: #f2f2f2; /* Button hover color */
+}
+
+
+/* Button styles */
+.button {
+  display: inline-block;
+  background-color: #D98555;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #D98555;
+  
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #082B59;
+}
+
+/* Figure styles */
+figure {
+  margin: 3rem 0 0 0;
+  flex-basis: 25%;
+  background-color: #59331d;
+  border-radius: 10px;
+}
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+
+/* Contact Page Styling */
+.contact-main {
+  padding: 40px;
+  background-color: #f2f2f2; /* White background */
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info {
+  text-align: center;
+  color: #131D26; /* Dark text color */
+}
+
+.contact-info h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59; /* Bright blue */
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #59331d; /* Coffee color */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #D98555; /* Peach hover color */
+}
+
+
+
+/* Footer styles */
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+  padding: 20px;
+  background-color: #082B59;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #082B59;
+  font-size: 1.5rem;
+  margin: 0 1rem 3rem 1rem;
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+      text-align: left;
+      padding: 20px 40px;
+  }
+
+  .product-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+      gap: 30px;
+  }
+
+  main {
+      padding: 40px;
+  }
+
+  footer {
+      padding: 20px 40px;
+      font-size: 16px;
+  }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .product-box {
+      flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  footer a {
+      font-size: 1rem; /* Smaller text for mobile */
+  }
+}
+
+/* Desktop version */
+@media (min-width: 1025px) {
+  header {
+      padding: 20px 60px;
+  }
+
+  .product-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+      gap: 40px;
+  }
+
+  main {
+      padding: 60px;
+  }
+
+  footer {
+      padding: 20px 60px;
+      font-size: 18px;
+  }
+}
